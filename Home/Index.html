@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Medallo Sound</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+  <div class="todo">
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="left-group">
+          <a href="Index.html"><img src="img/logo.png" class="logo" alt="Logo de Medallo Sound"></a>
+          <nav class="nav-desktop" class="navMobile" aria-label="Menú principal">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Artistas</a></li>
+              <li><a href="#">Medallo Tours</a></li>
+              <li><a href="#">Throwback</a></li>
+              <li><a href="../Blog/blog.html">Blog</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <a href="../Entradas/entradas.html" class="entradas desktop-only">Entradas</a>
+
+        <button id="menuBtn" class="menu-btn mobile-only" aria-label="Abrir menú">☰</button>
+      </div>
+
+      <nav id="navMobile" class="nav-mobile" aria-label="Menú móvil">
+        <ul>
+          <li><a href="Index.html">Inicio</a></li>
+          <li><a href="#">Artistas</a></li>
+          <li><a href="#">Medallo Tours</a></li>
+          <li><a href="#">Throwback</a></li>
+          <li><a href="../Blog/blog.html">Blog</a></li>
+          <li><a href="#">Contacto</a></li> <br> <br>
+          <li><a id="entradas" href="../Entradas/entradas.html">Entradas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <img src="img/banner.png" alt="Banner de Medallo Sound">
+      </div>
+
+      <h1 class="meta1"> El festival que trae a Medellín lo mejor <br> de la música internacional</h1>
+
+      <section id="artistas" class="section-lineup">
+        <div class="contenedor">
+          <div class="lineup-titulo">
+            <h2 class="artistash">ARTISTAS</h2>
+            <p class="tag" id="uno">sábado 15</p>
+          </div>
+
+          <div class="lineup">
+            <h3 class="artist-title">SHAKIRA y BEYONCÉ</h3>
+            <p class="artist-sub">Doja Cat · MAYO · Aitana · Juliana · Bad Yal · Rosalía · Shawn Méndez · KATSEYE · Addison Rae · Young Miko · XXXTentacion · Daniela Calle</p>
+          </div>
+
+          <div class="lineup-titulo domingo">
+            <p class="tag" id="dos">domingo 16</p>
+          </div>
+
+          <div class="lineup">
+            <h3 class="artist-title">SABRINA CARPENTER</h3>
+            <p class="artist-sub">Mariah Carey · Eladio · Juanjo Bona · Air Supply · Menudo · Ariana Grande · Manuel Turizo · Karol G · Raye · Kali Uchis · FERXXO · Olivia Rodrigo</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="Entradas">
+        <div class="infinito">
+          <a href="../Entradas/entradas.html">Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí - Compra tus entradas aquí</a>
+        </div>
+      </section>
+
+      <section id="Blog">
+        <h1>TENDENCIAS QUE ESTÁN MARCANDO EL RITMO GLOBAL</h1>
+        <p>La industria musical evoluciona y Medallo Sound '25 se une a las conversaciones que están cambiando el panorama internacional: experiencias inmersivas, turismo cultural, sostenibilidad y la fusión de géneros como motor de creatividad global. <b>Entrevistas exclusivas con artistas, organizadores y asistentes que comparten cómo la música conecta culturas y transforma realidades.</b></p>
+        <a href="#" class="boton">Más información aquí</a>
+      </section>
+
+      <section id="MedalloTours" class="medallotours">
+        <h3>Vive la capital de la montaña con</h3>
+        <h1>Medallo Tours</h1>
+        <p>Encuentra el mejor vuelo y hotel para ti o todo tu grupo de la mano de Medallo Tours. Aquí podrán planear su estadía para ser parte del MEDALLO SOUND ‘25 y preocuparse solo por vivir los mejores 2 días del año, <b>viniendo desde cualquier rincón del mundo.</b></p>
+        <img src="img/MedellinEnlaCabeza.png" alt="Medallo Tours">
+        <a href="#" class="boton">Más información aquí</a>
+      </section>
+    </main>
+
+    <footer>
+      <img src="img/Pie de pagina.png" alt="Patrocinadores">
+      <p class="footer-legal">Política de privacidad · Términos y condiciones</p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      const menuBtn = document.getElementById('menuBtn');
+      const navMobile = document.getElementById('navMobile');
+      if (!menuBtn || !navMobile) return;
+      menuBtn.addEventListener('click', () => {
+        navMobile.classList.toggle('show');
+        document.body.classList.toggle('no-scroll');
+      });
+      navMobile.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          navMobile.classList.remove('show');
+          document.body.classList.remove('no-scroll');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
