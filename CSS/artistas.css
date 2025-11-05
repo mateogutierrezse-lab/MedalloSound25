@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Arial Rounded Bold MT';
-    src: url('../font/Arial\ Rounded\ Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+ font-family: 'ARoundedMT'; 
+  src: url('../Font/ArialRoundedBold.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 body {
-    font-family: 'Arial Rounded Bold MT', sans-serif;
+    font-family: 'ARoundedMT', sans-serif;
     background-image: url('../img/background2.png');
 }
 
